@@ -3,6 +3,7 @@ html { box-sizing: border-box;}
 *::before,
 *::after {
     box-sizing: inherit;
+    vertical-align: top;
 }
 body {
 font-family: "PlayfairDisplay-Regular","AdobeInvisFont","MyriadPro-Regular";
@@ -10,8 +11,6 @@ color: #626262;
 font-size: 14px;
 line-height: 21px;
 }
-
-
 .site-navigation a {
     color: #626262;
     text-decoration: none;
@@ -19,22 +18,23 @@ line-height: 21px;
     font-weight: 400px;
     font-size: 14px;
     line-height: 11px;
-    
 }
 .site-navigation li:not(:last-child) {
 margin-right: 73px;
 } 
 
-li :hover {
+a:hover {
     color: #03a9f4;
 }
 .site-navigation {
     list-style: none;
-    margin: 0;   
+    margin: 0; 
+    font-size: 0; 
 }
 .page__container {
     margin-left: 26px; 
     margin-top: 20px;
+    
 }
 .article:not(:nth-child(even)) {
     margin-right: 14px;
@@ -43,12 +43,17 @@ li :hover {
 .container {
     width: 937px;
     margin: 0 auto;
+    font-size: 0;
 }
 .site-navigation li { 
     display: inline-block;
+    font-size: 14px;
+    font-size: 0; 
+    vertical-align: top;
  }
  .article {
-     display: inline-block; 
+     display: inline-block;
+     font-size: 0; 
  }
  .nav {
     text-align: center;
